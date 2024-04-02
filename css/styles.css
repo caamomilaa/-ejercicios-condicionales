@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+html {
+  scroll-behavior: smooth;
+}
