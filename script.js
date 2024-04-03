@@ -30,7 +30,7 @@ const typeNumber = (numberC) =>{
         console.log ('cero')
     }
 }
-typeNumberResult = typeNumber (5);
+typeNumber (5);
 
 //puedo poner numberA o tiene que ser numberC?
 
@@ -40,32 +40,61 @@ const grades = (numberD, numberE, numberF) =>{
     if (average<5){
         console.log ('Suspenso')
     }
-    else if (average>=5){
+    else if (average>=5 && average<=8){
         console.log ('Aprobado')
     }
     else if (average>=8){
         console.log ('Matrícula de Honor')
     }
 }
-gradesResult = grades (9, 9, 9);
+grades (9, 9, 9);
 
-//por que no me sale MH?
 
-const biggerNumber = (numberG, numberH, numberI) =>{
-    if (numberG>numberH && numberI){
+const biggerNumber = (numberG, numberH) =>{
+    if (numberG>numberH){
         console.log (numberG)
     }
     else{
-        console.log (numberH && numberI)
+        console.log (numberH)
     }
 
 }
-biggerNumberResult = biggerNumber (5,7,2);
+biggerNumber (5,7);
 
-//    if (numberG>numberI){
-// console.log (numberG)
-  //  }
-    //else{
-   // console.log (numberI)
-//} 
+const oddDivisible = (numberA) =>{
+    if(numberA %3 === 0){
+        console.log('Es divisible por 3')
+    }
+    else if(numberA %5 === 0){
+        console.log('Es divisible por 5')
+    }
+    else if(numberA %3 === 0 && numberA %5 === 0){
+        console.log('Es divisible por 3 y por 5')
+    }
+    else{
+        console.log(numberA)
+    }
+}
+oddDivisible (15)
 
+const pairNumber = (numberA) =>{
+    if(numberA %2 === 0){
+        console.log ('Es un número par')
+    }
+    else{
+        console.log ('Es un número impar')
+    }
+}
+pairNumber (5)
+
+const leapYear = (numberA) =>{
+    if((numberA %4 === 0 && !numberA %100 === 0)|| numberA %400 === 0){
+        console.log ('Es un año bisiesto')
+    }
+    else{
+        console.log ('No es un año bisiesto')
+    }
+}
+leapYear(2023)
+
+//Crea una función que reciba dos valores y los sume, la función debe sumar los valores aunque se los mandemos en formato string y SÓLO debe convertirlos a number si llegan como string.
